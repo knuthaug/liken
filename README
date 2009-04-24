@@ -1,1 +1,18 @@
-First post!
+Liken 
+==================================================
+
+  lik·en  (lkn)
+    tr.v. lik·ened, lik·en·ing, lik·ens
+    To see, mention, or show as similar; compare.
+
+The plan is to make Liken a tool for automatically comparing stuff (on
+the web) through screen scraping. The particular itch I am trying to
+scratch with Liken is to get a tool that will automatically monitor
+web pages and specifically the version number of software hosted on
+those web pages and give me a little notification when it changes when
+compared to the baseline value or the previous value.
+
+Oh, and learn git, github and ruby in the process. 
+
+We'll see how that goes.
+
