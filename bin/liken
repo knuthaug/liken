@@ -1,0 +1,4 @@
+$LOAD_PATH.unshift(File.dirname(__FILE__ + '.rb') + '/../lib') unless $LOAD_PATH.include?(File.dirname(__FILE__ + '.rb') + '/../lib')
+
+require liken
+Liken.Runner.execute(ARGV.dup)
