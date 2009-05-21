@@ -7,7 +7,7 @@ module Liken
     end
 
     def get_value
-      return 2
+      return 3
     end
 
   end
