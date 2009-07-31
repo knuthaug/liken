@@ -9,7 +9,7 @@ class TestRunner < Test::Unit::TestCase
     end
 
     def test_get_value
-        assert_equal(2, @runner.get_value)
+        assert_equal(3, @runner.get_value)
     end
 
 end
