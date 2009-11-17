@@ -2,6 +2,4 @@
 
 module Liken
 
-
-
 end
