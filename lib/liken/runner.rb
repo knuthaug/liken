@@ -3,7 +3,7 @@ module Liken
   class Runner
 
     def initialize
-      
+
     end
 
     def get_value
