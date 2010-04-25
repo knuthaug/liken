@@ -7,15 +7,14 @@ task :default => [:examples, :features] do
 end
 
 
-desc "Run all unit tests"
-task :units do
-  require 'rake/runtest'
-  Rake.run_tests 'test/unit/*.rb'
+desc "Run all"
+task :test => [:examples, :features]do
+
 end
 
 desc "Run all examples"
 Spec::Rake::SpecTask.new('examples') do |t|
-  t.spec_files = FileList['test/unit/**/*.rb']
+  t.spec_files = FileList['test/**/*.rb']
 end
 
 
