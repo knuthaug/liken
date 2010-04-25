@@ -13,6 +13,10 @@ module Liken
         @items[item.name] = item
       end
 
+      def delete(name)
+        @items.delete(name)
+      end
+
 
       def get(name)
         @items[name]
@@ -20,7 +24,6 @@ module Liken
 
 
       def read()
-        @items["test"] = Action.new "test"
       end
 
       def size
