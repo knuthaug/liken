@@ -4,7 +4,10 @@ module Liken
 
     class ActionList
 
-      def initialize
+
+      def initialize(dirname)
+        @dir = dirname
+        @index_file = @dir +  "/index.yml"
         @items = Hash.new
         read
       end
@@ -24,6 +27,12 @@ module Liken
 
 
       def read()
+        Dir.mkdir @dir unless File.directory?(@dir)
+        unless File.exists? @index_file
+          @index = File.new(@index_file, File::CREAT|File::RDWR, 0644)
+        end
+      rescue Exception => ex
+        puts "error:" << ex
       end
 
       def size
